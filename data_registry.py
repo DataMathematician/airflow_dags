@@ -1,4 +1,3 @@
-from asyncio import tasks
 from airflow import DAG
 from airflow.providers.docker.operators.docker  import DockerOperator
 from airflow.operators.docker_operator import DockerOperator
