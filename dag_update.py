@@ -7,7 +7,7 @@ from airflow.operators.bash import BashOperator
 dag = DAG(
     dag_id="dag_puller",
     default_args={"depends_on_past":False},
-    start_date="*/5 * * * *",
+    start_date="*/5 2 * * *",
     schedule_interval=datetime.datetime(minutes=5),
     catchup=False,
     )
