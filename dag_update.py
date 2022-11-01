@@ -23,8 +23,7 @@ fetch_code = BashOperator(
         "git pull origin master &&"
         #"git init && "
         #"git remote add origin https://github.com/DataMathematician/airflow_dags.git && "
-        "git reset --hard origin/master"
-        "echo ++++++++++++++++++++++++++++++++++++++++++ "
+        "git reset --hard origin/master "
     ),
     dag=dag
 )
