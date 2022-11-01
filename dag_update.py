@@ -21,8 +21,6 @@ fetch_code = BashOperator(
         "git config --global user.email 'Bloodjanp@gmail.com' && "
         "cd /opt/airflow/dags && "
         "git pull origin master &&"
-        #"git init && "
-        #"git remote add origin https://github.com/DataMathematician/airflow_dags.git && "
         "git reset --hard origin/master "
     ),
     dag=dag
