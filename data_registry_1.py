@@ -5,7 +5,7 @@ import pendulum
 
 with DAG(
     tags=['data registry_test'],
-    dag_id='Data_Registry',
+    dag_id='Data_Registry_test',
     start_date=pendulum.datetime(2022,9,1,tz='UTC'),
     schedule_interval='@daily'
 ) as dag:
